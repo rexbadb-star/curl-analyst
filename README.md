@@ -29,7 +29,7 @@ curl-analyst https://example.com --json --strict     # JSON + exit 2 bila ada KR
 ```bash
 curl -i https://example.com/data | curl-analyst analyze
 curl-analyst analyze --file simpanan.txt
--curl -i https://api.example.com/x | curl-analyst analyze --url https://api.example.com/x --json
+curl -i https://api.example.com/x | curl-analyst analyze --url https://api.example.com/x --json
 ```
 
 ### Opsi
@@ -82,7 +82,7 @@ curl-analyst https://example.com --ai --ai-model deepseek/deepseek-v4-pro --json
 - **performa** — TTFB, total time, DNS/connect lambat, ukuran body, kompresi gzip/br hilang, HTTP/2
 - **cache** — resource statis tanpa Cache-Control/ETag, HTML/JSON tanpa header cache
 - **html** — doctype, `lang`, title, viewport, charset, mixed content, inline script vs CSP
-- **json** — validitas (kritikal bila rusak), struktur/field, indikasi pagination & field error
+- **json** — validitas (kritis bila rusak), struktur/field, indikasi pagination & field error
 - **header** — Content-Type hilang/salah klaim, charset, header rate-limit
 
 Setiap temuan punya tingkat **KRITIS / PERINGATAN / INFO / OK**, **bukti** (nilai persis dari respons), dan **saran perbaikan**.
