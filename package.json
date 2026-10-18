@@ -1,0 +1,19 @@
+{
+  "name": "curl-analyst",
+  "version": "1.0.0",
+  "description": "Analisis output cURL secara lokal: jalankan curl, nilai respons dengan engine aturan, keluarkan laporan narasi + temuan berperingkat. Tanpa API, tanpa LLM.",
+  "type": "module",
+  "bin": {
+    "curl-analyst": "bin/curl-analyst.js"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@heyputer/puter.js": "^2.6.4"
+  }
+}
